@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+
+        }
+        .box{
+            height: calc(100% - 40px);
+            width: 400px;
+            background-image: url(https://source.unsplash.com/random);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .box::after{
+            content: "Aqui vem uma mensagem";
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--
+        Unidades comuns
+        *lentgh     -- Representa um valor de distância: px, em, vw
+        *angle      -- Representa um ângulo: deg, rad, turn
+        *time       -- Representa um tempo: s, ms
+        *resolution -- Representa resoluções para dispositivos: dpi
+    -->
+
+    <!--
+        Distância absoluta
+
+        Unidade     Nome                Equivalência
+        cm          Centimêtros         1cm = 96px/2.54in
+        in          Inches(polegadas)   1in = 2.54cm = 96px   
+        px          Pixels              1px = 1/96th of 1in
+
+        recomendado px
+
+        Distãncia relativa
+
+        Unidade     Relativo a
+        em          Tamanho da font do pai
+        rem         Tamanho da font do elemento raiz(root/html)
+        vw          1% da viewport width
+        vh          1% da viewport heigth
+    -->
+
+    <div class="box"></div>
+
+    <!--
+        Funções
+
+        *rgb()
+        *hsl()
+        *url()
+        *calc()
+
+    -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+Estrutura de dados é uma maneira de organizar e ordenar informações com textos, números, booleanos, etc e registrá-los na memória do computador
+
++Organizar dados(informações)
+    +Textos, números, booleanos ...
++Como estão registrados na memória
+
+Ex: Array, Object...
+
+Para esse gerenciamento, podemos dividir em 3 etapas:
+1.Modelar a estrutura
+2.Dar vida à estrutura(instanciar essa estrutura)
+3.Criar as funcionalidades dessa estrutura
+    +Ex: inserir, excluir, buscar, exibir, contar...
+
+
+ARRAYS
+
+Array, vetor ou arranjo, é uma estrutura amplamente utilizada e implementada em quase todas as linguagens de programação.
+Uma das estruturas mais básicas, simples de criar e utilizar
+EX:
+    [1, 2, 3, 4, 5]
+
+Características
+
++Acesso pelo index
++Respeita a ordem de inserção dos elementos
++Aceita valores duplicados
++Dependendo do tamanho do array, para encontrar e/ou deletar um elemento, será necessário um uso maior de performance
+
+arrays no JavaScript
+
++são dinâmicos
++Você poderá ter dados de diferentes tipos dentro de um array. Strings, numbers, booleans, objetos, funções e até outros arrays
++Existem muitos métodos já implementados
+    +push(), pop(), find(), filter() entre outros
+
+
+MATRIX
+
+Matriz ou Vetor multidimensional
+
+Significa que é um array, dentro de outro array.
+podemos ter muitos níveis
+
+STACK
+
+Tradução de stack é pilha
+
+Como uma pilha de livros
+
++linear, um após o outro
++o último a entrar na pilha é o primeiro a sair
+
+LIFO: Last In First Out
+    +O último elemento a entrar na pilha, aquele elemento do topo da pilha, é o primeiro a sair
+
+métodos funddamentais
++push():adicionar um elemento à pilha
++pop():remover o elemento do topo da pilha
++peek():obter elemento do topo da pilha
+
+Outros métodos poderão ser implementados como size() para mostrar o tamanho da pilha
+
+
+QUEUE
+
+Tradução de Queue é fila
+Como uma fila em uma loja ou restaurante
+
++linear
++O primeiro a entrar na fila é o primeiro a sair
+
++FIFO: First In First Out
+    +O primeiro elemento a entrar na fila, é o primeiro a sair dela
+
++Front(frente) é a referencia do primeiro elemnto a entrar na fila
+
++Back(fundo) é a referencia do último elemento a entrar na fila
+
++Enqueue - entrar na fila
++Dequeue - Sair da fila
+
+Métodosfundamentais
+
++enqueue(): adicionar um elemento ao final da fila
++dequeue(): remover o primeiro elemento a entrar na fila
+
+Outros métodos poderão ser implementados como size() para mostrar o tamanho da fila ou front() para pegar o primeiro elemento da fila, dentre tantos outros
+

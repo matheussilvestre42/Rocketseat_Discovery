@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        /*----------------------------------------------------------------*/
+        .box{
+            display: flex;
+            border: 1px dashed red;
+            flex-wrap: wrap-reverse;
+        }
+        .box div {
+            border: 1px solid;
+            width: 200px;
+        }
+        /*----------------------------------------------------------------*/
+        .box2{
+            border: 1px dashed red;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .box2 div{
+            border: 1px solid;
+            width: 90vw;
+        }
+        /*----------------------------------------------------------------*/
+        .box3{
+            display: flex;
+            border: 1px dashed red;
+            justify-content: space-evenly;
+            height: 180px;
+            flex-direction: column;
+        }
+        .box3 div{
+            border: 1px solid;
+        }
+        /*----------------------------------------------------------------*/
+        .box4{
+            border: 1px dashed red;
+            display: flex;
+            height: 150px;
+            flex-direction: column;
+
+            align-items: center;
+        }
+        .box4 div{
+            border: 1px solid;
+        }
+        /*----------------------------------------------------------------*/
+        .box5{
+            border: 1px dashed red;
+            display: flex;
+            gap: 2em;
+        }
+        .box5 div{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        #Direção dos itens
+        
+        -flex é uma dimensão(horizontal ou vertical)
+        -podemos mudar a direção com 'flex-direction'
+        -valores: (row | row-reverse | column | column-reverse)
+    -->
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    ---------------------------------------------------------------------------------------------------------
+    <!--
+        #flex-wrap
+
+        -podemos usar multi linhas
+        -cada nova linha, um novo flex container
+    -->
+
+
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    ---------------------------------------------------------------------------------------------------------
+    <!--
+        #flex-flow
+
+        -shorthand
+        -flex-direction || flex-wrap
+    -->
+
+    <div class="box2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    ---------------------------------------------------------------------------------------------------------
+
+    <!--
+        #justify-content
+
+        -Alinhamento dos elementos dentro do container
+        -Distribuição dos elementos
+
+        ##Valores
+
+        -flex-start(inicio)
+        -flex-end(fim)
+        -center(centro)
+        -space-around(espaço em volta)
+        -space-between(espaço entre)
+        -space-evenly(espaço igual entre elementos)
+
+    -->
+
+    <div class="box3">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    ---------------------------------------------------------------------------------------------------------
+    
+    <!--
+        #align-items
+
+        -alinhamento dos elementos no eixo cruzado
+
+        ##valores
+
+        -strech
+        -flex-start
+        -flex-end
+        -center
+    -->
+
+    <div class="box4">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    ---------------------------------------------------------------------------------------------------------
+
+    <!--
+        #gap
+
+        -espaço entre os elementos
+
+        ##Valores
+
+        Unidades de medida
+        fixas: px, pt
+        flexiveis: %, em, rem
+
+    -->
+
+    <div class="box5">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>

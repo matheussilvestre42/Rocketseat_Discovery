@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flexbox{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .item:nth-child(1){
+            order: 1;
+        }
+
+        .container{
+            display: flex;
+            border: 1px solid red;
+            height: 200px;
+        }
+        .item2{
+            background-color: gray;
+            border: 1px solid;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        #Layouts e evolução
+
+        Layout tem a ver com a maneira que os elementos estão distribuidos na tela
+        
+        ##Normal Flow
+
+        Ou Flow Layout é a maneira que os elementos 'block' e 'inline' ficam na página
+
+        ##Tables
+
+        É a maneira de tabelas onde a tag 'table' recebe display 'table' fazendo com que os elementos com 'td' e 'tr' possam ser usados para montar uma tabela
+
+        ##Tabless
+        
+        Uso das propriedades 'float', 'clear' para que os elementos possam mudar de posição na tela
+
+        ##Flexbox
+
+        A caixa se torna flex, fazendo com que os elementos internos possam receber melhor:
+
+            -Alinhamento
+            -Ordenação
+            -Tamanhos flexíveis
+
+
+        #Terminologia
+
+        -Flex Container(caixa que tem elementos dentro)
+            -Flex Item(itens dentro do container)
+        -Nesting (elementos vivem dentro de outro elemento)
+        -Axis(eixo)
+            -main(principal)
+                -start, end (inicio do eixo, final do eixo)
+            -cross(cruzado)
+                -start, end (inicio do eixo, final do eixo)
+        -Flex sizing(item ser flexivel)
+            -flexível
+            -altera width/heigth dos itens para preenchimento dos espaços do flex container
+
+    -->
+
+    <!--tabless-->
+    <div style="float: left;">esquerda</div>
+    <div style="float: right;">direita</div>
+    <div style="clear: both;">limpa</div>
+
+
+    <div class="flexbox">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <div class="container">
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">2</div>
+    </div>
+</body>
+</html>

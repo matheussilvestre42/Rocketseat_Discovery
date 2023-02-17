@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .page{
+            border: 2px solid;
+            min-height: 100vh;
+            color: black;
+
+            display: flex;
+        }
+        aside{
+            flex: 1;
+            background: lightgreen;
+        }
+        main{
+            flex: 2;
+            background: lightblue;
+            display: flex;
+            flex-direction: column;
+        }
+        main section:nth-child(1){
+            flex: 0 0 100px;
+            background: lightgoldenrodyellow;
+        }
+        main section:nth-child(2){
+            flex: 2;
+            background: lightsalmon;
+        }
+        main section:nth-child(3){
+            flex: 1 0;
+            background: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <aside>Aside</aside>
+        <main>
+            Main
+            <section>Content 1</section>
+            <section>Content 2</section>
+            <section>Content 3</section>
+        </main>
+    </div>
+</body>
+</html>

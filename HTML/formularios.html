@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        action - lugar para onde os dados vão ser enviados
+        method - como eles serão enviados
+                get - pela url
+                post - escondidas
+    -->
+    <!--
+        <fieldset>
+            -agrupamento de campos
+            -mesmo propósito
+            -semântico
+            -acessibilidade
+
+        Atributos especiais
+        -disabled
+            -desbilita todos os elementos internos
+            -não serão enviados ao submeter o formulário
+        -form
+            -o id de um formulário ao qual esse fieldset pertence
+            -não precisa estar dentro do formulário
+        -name
+            -nome do grupo
+        
+        <legend>
+        -nome do agrupamento
+        -primeiro elemento dentro do fieldset
+    -->
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="">
+        </fieldset>
+    </form>
+
+    <form id="contato" action="">
+        <button>Enviar</button>
+    </form>
+
+    <fieldset form="contato" name="inputs-contact">
+        <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+    </fieldset>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1>Label</h1>
+    <!--
+        <label>
+
+        -associar e idntificar uma (ou mais) tag de entrada de dados
+        -acessibilidade
+        -você pode clicar para mudar o foco de entrada de dados
+
+        Atributos
+            -for
+                -para fazer a conexâo entre este label e a tag de entrada de dados
+                -é feita via id do input
+                -só funciona com elementos específicos
+                    -button, input (not hidden), meter, output, progress, select, textarea
+    -->
+
+    <label for="nome">
+        Nome Completo
+        <input id="nome" type="text">
+    </label>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    
+    <h1>Button</h1>
+
+    <!--
+        <button>
+        
+        -Representa um botão
+        -Usado para enviar formulários
+        -É estilizado pelo user agent
+
+        Atributos Comuns
+            -type
+                -submit
+                -reset
+                -button
+            -autofocus - coloca o foco no botão(ao apertar Enter)
+            -disabled
+            -name
+            -value
+            -form
+    -->
+
+    <button type="reset" autofocus name="button" value="valor qualquer" form="contato">Enviar</button>
+    <!--<input type="button" value="Enviar">-->
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1>List - DataList</h1>
+
+    <!--
+        #<datalist>
+
+        -Lista de valores como sugestão a uma tag <input>
+        -Valores sugestivos e não obrigatórios
+        -Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+        #List
+
+        -Recebe como valor o id de um <datalist> residente no mesmo documento
+
+        #Tipos de Input suportados
+
+        -text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color
+
+        *valores de datalist que não são compatíveis com o tipo do <intput> não serão apresentados
+
+        #Tipos de Input não suportados (conforme especificação)
+
+        -hidden, password, checkbox, radio, file, ou qualquer tipo de button
+
+
+        #User Agent
+
+        Verificar a compatibilidade com o browser https://caniuse.com
+    -->
+
+    <input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
+
+    <datalist id="fruitsdata">
+        <option>apple</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+
+    <input type="color" list="colorsdata">
+
+    <datalist id="colorsdata">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+    </datalist>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1>Input</h1>
+
+    <!--
+        <input>
+        -Uma das tags mais usadas em formulários
+        -aceita os mais diversos tipos de dados
+        -um dos mais poderosos e complexos
+        -elevado numero de combinações
+
+        Atributos
+        -type
+        -name
+        -id
+    -->
+
+
+    <!--
+        <input> Atriburos comuns
+        
+        -autocomplete
+        -autofocus
+        -disabled
+        -readonly (quase todos)
+        -value
+        -form (quase todos)
+        -name
+        -required (quase todos)
+        -placeholder (quase todos)
+
+    -->
+    <form action="" id="meu-form"></form>
+    <input name="email" type="email" autocomplete="email" form="meu-form" required
+    placeholder="Digite seu email">
+</body>
+</html>

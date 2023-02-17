@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            border: 1px dashed red;
+
+        }
+        .box div{
+            border: 1px solid;
+            flex-basis: 50px; /*tamanho*/
+        }
+        /**/
+        .box2{
+            height: 50vh;
+            display: flex;
+            border: 1px dashed red;
+            flex-direction: column;
+
+        }
+        .box2 div{
+            border: 1px solid;
+        }
+        .box2 div:nth-child(3),
+        .box2 div:nth-child(4){
+            flex-grow: 1;
+        }
+        .box2 div:nth-child(1){
+            flex-grow: 2;
+        }
+        /**/
+        .box3{
+            display: flex;
+            border: 1px dashed red;
+            flex-direction: column;
+            height: 180px;
+        }
+        .box3 div{
+            border: 1px solid;
+            flex-basis: 80px;
+        }
+        .box3 div:nth-child(2),
+        .box3 div:nth-child(3){
+            flex-shrink: 1;
+        }
+        /**/
+        .box4{
+            border: 1px dashed red;
+            display: flex;
+        }
+        .box4 div{
+            border: 1px solid;
+        }
+        .box4 div:nth-child(1){
+            order: 1;
+        }
+        .box4 div:nth-child(2){
+            order: 20;
+        }
+        .box4 div:nth-child(3){
+            order: 0;
+        }
+        .box4 div:nth-child(4){
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    -------------------------------------------------------------
+
+    <!--
+        #flex-grow
+
+        -crescimento do item dentro do container em relação aos espaços vazios.
+    -->
+    
+    <div class="box2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    --------------------------------------------------------------
+
+    <!--
+        #flex-shrink
+
+        -O encolher o item dentro do container
+    -->
+
+    <div class="box3">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    <!--
+        #flex
+
+        -shorthand
+        -flex-grow flex-shrink flex-basis
+        -podem ter 1, 2 ou 3 valores
+    -->
+    -------------------------------------------------------------------
+    <!--
+        Order
+    -->
+
+    <div class="box4">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>

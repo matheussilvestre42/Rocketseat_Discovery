@@ -1,0 +1,106 @@
+Para que serve ?
+
+-ferramenta para desevolver aplicações backend e frontend com JS e micro serviços(micro aplicações)
+
+-contruir api
+-scripts e automação
+-machine learning
+-I.A
+
+
+OBS: Se precisar de muito processamento ou seja, CPU, não é recomendado usar o node
+
+
+Vantagens
+
+-Rápido (execução / prototipar)
+-Alta escalabilidade
+-Aplicações de ponta
+-JS everywhere
+-Ecosistema gigante
+-Casos de uso (Netflix / Paypal)
+
+O que é ?
+
+-JS Runtime Enviroment (Ambiente de desenvolvimento)
+-Não é um Framework
+-Não é uma Linguagem
+
+V8
+
+Compõe o ambiente, a maquina virtual, que irá rodar o JS na máquina
+
+-Interpretador de JS para linguagem de máquina
+-crado com C++
+-Baseado nas últimas features do JS
+-Focado para Chrome mas tem todo cuidado de não quebrar o node
+-Não possui a DOM, console ou File System
+
+Como Funciona ?
+
+Vamos ver o motivo do node ser tão rápido
+
+imagine
+Uma batalha entre 2 restaurantes...
+qual teria o melhor atendimento
+
+restaurante do Tio Apache
+    -Diferencial cada cliente tem seu próprio garçom
+
+Um cliente vai fazer o pedido de uma pizza
+    -um garçom é direcionado até sua mesa
+    -Pega o pedido e leva até a cozinha, para o chef preparar
+    -O chef , por regra do restaurante, irá proibir e bloqueando o garçom de voltar para o cliente, até que o pedido fique pronto
+    -O cliente queria muito fazer mais pedidos, mas não pode, pois o garçom está bloqueado
+    -Após o pedido ficar pronto, o garçom leva para o cliente
+O cliente foi embora e por regra do restaurante o garçom é despedido
+
+Chegou 100 clientes numa noite
+    O gerente precisou contratar mais garçoms
+
+É um serviço caro e de primeira, mas lento né? A regra de bloquear os garçons e ter que contratar um garçon para cada cliente, torna o serviço caro e lento
+
+
+restaurante do tio Noderson
+    -Diferencial: O garçon de nome Eveneto Lupin
+
+Mesa 1: O cliente vai fazer o pedido de uma pizza
+    -Eveneto Lupin pega o pedido e leva para o chef
+    -volta com gosto de gás para a pŕoxima mesa
+Mesa 2: O cliente vai fazer o pedido de uma salada
+    Éveneto Lupin já pegou o pedido e levou para o Chef
+O chef tocou o sininho avisando que o pedido da mesa 1 já ficou pronto e Eveneto corre pra pegar e fazer a entrega do pedido
+
+O segredo de Eveneto é que ele sabe trabalhar de um maneira super assíncrona, fazendo mais de 1 evento de cada vez e não tem nada que o bloqueie. Ele é meuito solicitado e faz seu trabalho meuito bem feito
+
+
+Decifrando
+Tio Apache = Apache
+Noderson = Node
+Cliente = Usuário
+Pedido = Request
+Garçon = Thread
+Cozinha = Servidor
+Chef = Banco de Dados
+Eveneto Lupin = Event Loop
+
+Node é single-threaded, non-blocking e asynchronous
+
+
+História
+
+-Ryan Dahl em 2009
+-NPM Versão 1 em 2011 https://npmjs.org
+    -compartilhamento de bibliotecas
+    -grande mudança de manutenção e compartilhamento de códigos
+-2015 Node.js Foundation
+    -Inclui: IBM, Microsoft, PayPal e Groupon
+    -passou afazer parte do https://openjsf.org/
+-https://github.com/nodejs/node
+-Comunidade ativa
+
+
+
+Abrir node no terminal
+.nvm/versions/node/v16.15.1/bin/node
+

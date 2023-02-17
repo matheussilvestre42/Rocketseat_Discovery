@@ -1,0 +1,66 @@
+                            ls -lh /usr/bin
+
+
+COMAND
+    *Programa que voce está rodando
+    *obrigatório
+OPTION(S)
+    *Mudar o Comportamento
+    *Explicar ao comando como deve funcionar
+    *geralmente, começa com um traço
+    *geralmente, uma letra somente
+    *a maioria dos comandos oferecem muitas opções
+ARGUMENTS
+    *Onde o Comando irá operar?
+    *Caminho do arquivo ou diretórios
+
+
+Arquivos e diretórios
+
+pwd - mostra o diretório atual
+
+cd(change directory) - mudar de diretório
+    .  -diretório atual
+    .. -voltar diretórios
+    -  -voltar de onde veio
+
+ls - lista arquivos e pastas
+    -l - mais informações
+    -a - all
+    -h - human
+    -R - Recursive
+    -S - Ordenar pelo tamanho 
+file - tipo de arquivo/ informações
+stat - dono/modificações/tamanho
+
+mkdir - criar diretórios
+    -p - multiplos diretorios(filhos)
+
+touch - alterar registro de data e hora de arquivos ou pastas/ criar um ou mais arquivos
+
+cp - copiar
+    -r (diretórios)
+
+mv - mover/renomear
+
+rm - remover(pra sempre)
+    -r (diretorios)
+    -f (remover a força)
+
+wildcards(curinga)
+    * - 1 ou mais caracteres
+
+find - encontrar aquivos ou diretórios
+    find <path> arg [expression]
+    -type <d/f>
+    -name
+
+Ver conteudo de arquivos
+
+    -less (abre o arquivo (q para fechar))
+    -cat (printar na tela o aqruivo(abre e fecha automaticamente))
+
+Editar arquivos
+    -nano (editor de texto simples (não é possivel utilizar o mouse))
+    -vim(vi)  (editor de texto mais complexo)
+

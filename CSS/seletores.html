@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            #titulo {
+                color: red;
+            }
+            .red{
+                color: red;
+            }
+        */
+
+        .big{
+            font-size: 2em;
+        }
+        [title] {
+            font-size: 5em;
+        }
+        h1:hover, p:hover{
+            color: red;
+        }
+
+        body article h2{
+            color:blue;
+        }
+
+        h3 + p{
+            color: brown;
+        }
+        button + button{
+            margin-left: 32px;
+        }
+        h3 ~ p{
+            color: aquamarine;
+        }
+        /* ul > li [class="red"]{
+            color: red;
+        } */
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        *Element Selector
+            -Todos os elementos HTML
+        *ID Selector
+            -Um elemento que tenha uma atributo 'id'
+            -cada id deverá ser unico
+            -#(nome do id)
+        *Class Selector
+            -Os elementos que contenham um atributo 'class'
+            -Podemos ter uma ou mais classes
+            -.(nome da classe)
+        *Attribute Selector
+            -Um elemento que tenha um atributo especifico
+            -[(atributo)]
+        *Pseudo-class Selector
+            -Elementos de um estado específico
+        *Adjacent sibling combinator
+            -Identificado pelo sinal '+' entre dois seletores
+            -seleciona somente o elemento do lado direito que é irmão direto na hierárquia
+        *General Sibling combinator
+            -identificado pelo sinal '~' entre dois seletores
+            -seleciona todos os elementos irmãos
+    -->
+    <h1 id="titulo" class="red big" title="Algum titulo">Titulo da pagina</h1>
+    <p id="content" class="red big">Conteudo da minha pagina</p>
+
+    <article>
+        <h2>Titulo 2</h2>
+    </article>
+    <article>
+        <h2>Titulo 2</h2>
+    </article>
+
+    <h3>Titulo 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eos hic doloremque eligendi libero eius, reprehenderit maiores, iusto distinctio dignissimos quas odio non, ex modi accusantium. Illo autem neque eos.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae hic sed, quaerat saepe asperiores illo quidem ipsa eligendi ad suscipit velit sit accusamus! Consequatur labore harum quis mollitia in perspiciatis?</p>
+
+    <button>Um button</button>
+    <button>Outro click</button>
+    
+    <ul>
+        <li>Aloo</li>
+        <li class="blue">heyy</li>
+    </ul>
+
+</body>
+</html>

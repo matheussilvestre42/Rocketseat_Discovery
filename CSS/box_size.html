@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .boxModel{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            margin: 10%;
+            padding: 0 20px;
+
+        }
+
+
+        .block{
+            height: 100px;
+            width: 10px;
+            border: 1px solid red;
+        }
+        .inline{
+            width: 10px;
+            height: 100px;
+            border: 1px solid green;
+        }
+
+
+        .margem, .margem2{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+
+            margin: 16px auto;
+        }
+
+
+        .preenchimento, .preenchimento2{
+            border: 1px solid red;
+
+            padding: 10px 2em 8px 50%;
+        }
+
+        .borda{
+            width: 100px;
+            height: 100px;
+            margin: 20% auto;
+
+            border: 20px groove red;
+            outline: 10px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+    <div class="boxModel">CSS é incrivel</div>
+
+    <!--
+        display-block: <p> <div> <section>, headings (<h1>, <h2>...)
+        display-Inline: <a> <strong> <span> <em> (width, height não funcionam)
+    -->
+
+
+    <p>Um <strong>texto</strong> qualquel </p>
+
+    <div class="block">block</div>
+    <span class="inline">inline</span>
+
+    <h1>Margin</h1>
+    <!--
+        margin colapsed: não soma duas medidas de caixas diferentes
+        display inline não tem margin collapsed
+    -->
+    <div class="margem">block</div>
+    <section class="margem2">Elemento Abaixo</section>
+
+    <h1>Padding</h1>
+
+    <div class="preenchimento">padding</div>
+    <section class="preenchimento2">Elemento Abaixo</section>
+
+
+    <h1>Border & Outline</h1>
+
+    <div class="borda">border</div>
+
+
+
+</body>
+</html>

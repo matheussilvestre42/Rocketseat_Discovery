@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            position: relative;
+            top: 20vh;
+
+            width: 400px;
+            margin: auto;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label for="name">Nome:</label><br>
+                <input type="text" name="name" id="name" minlength="2" maxlength="150" placeholder="Digite seu Nome:" required>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" name="personalemail" id="email" placeholder="email@seudominio.com" minlength="8" required>
+            </div>
+            <div>
+                <label for="message">Mensagem:</label><br>
+                <textarea name="userMessage" id="message" cols="20" rows="8" placeholder="Deixe uma mensagem:" maxlength="255"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        
+        </fieldset>
+    </form>
+</body>
+</html>

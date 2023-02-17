@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+        }
+        .box1{
+            background-color: red;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 4;
+        }
+        .box2{
+            background-color: green;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+        .box3{
+            background-color: blue;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 10;
+        }
+
+        body{
+            height: 100vh;
+            margin: 0;
+
+            display: flex;
+
+            align-items: center;
+        }
+        .conteiner{
+            width: 100vw;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Position
+        #Relative
+            mesmo fluxo - mesma camada
+            top, right, bottom, left, z-index
+    
+        #Absolute
+            cria um novo fluxo - nova camada
+            relativo a pagina inteira
+        
+        #Fixed
+            cria um novo fluxo
+            fica fixo na pagina
+
+        #Element stacking
+            empilhamento z-index
+    -->
+
+    <section>
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </section>
+    <br><br><br><br><br><br>
+    
+    <section class="conteiner">
+        <div class="box blue"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+    </section>
+</body>
+</html>

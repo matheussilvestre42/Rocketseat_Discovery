@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            color: red;
+        }
+
+        article p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        article p:nth-child(even) {
+            color: red;
+        }
+        article p:nth-child(odd) {
+            color: blue;
+        }
+        a:hover {
+            color: red;
+        }
+        input:focus{
+            color: red;
+        }
+        input:disabled{
+            background-color: green;
+        }
+        li::before{
+            content: ">";
+        }
+        li::after{
+            content: "<";
+        }
+
+        article p:nth-of-type(2)::first-line{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        #pseudo-Classes
+        -É um tipo  de seletor que irá selecionar um elemento que estiver em um estado específico
+
+        -Exemplos
+        :first-child - primeiro filho da caixa
+        :nth-of-type() - seleciona de acodo com o elemento e a posição
+        :nth-child() - seleciona de acordo com a posição do filho(even - impares, odd - pares)
+
+        -ações do usuário
+        :hove
+        :focus
+
+        -atributos
+        :disabled
+        :required
+
+
+
+        #pseudo-elements
+        -Com pseudo-elements podemos adicionar elementos HTML pelo próprio CSS
+
+        -exemplos
+        ::before
+        ::after
+        ::first-line
+    -->
+
+    <ul>
+        <h3>palavras</h3>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <article>
+        <h3>Gratidão</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ut exercitationem eum voluptatem quasi possimus magnam magni voluptate enim nihil excepturi distinctio, perspiciatis minus deleniti quo mollitia eligendi ullam provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui architecto optio voluptas repellendus reprehenderit cupiditate, veniam aliquam eos nemo, est quisquam autem officia ipsam quia quo voluptatem. Autem, voluptates?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore illum nisi facilis possimus distinctio reprehenderit ullam odit commodi sit laborum sapiente corporis quae, soluta asperiores molestias voluptatem vel velit! Eius?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam expedita maxime saepe obcaecati? Accusantium quibusdam quam autem delectus accusamus repudiandae, ad, quidem molestiae corrupti voluptate inventore harum? Voluptatum, laborum molestias.</p>
+    </article>
+
+    <a href="#">clique aqui</a>
+    <input type="text" disabled>
+</body>
+</html>
